@@ -279,7 +279,7 @@ def hangman_with_hints(secret_word):
 
       if(g=="*"):
         print('Possible word matches are:')
-        print(show_possible_matches(get_guessed_word(secret_word, letters_guessed)))
+        show_possible_matches(get_guessed_word(secret_word, letters_guessed))
       elif(len(g)!=1 or not(str.isalpha(g))): 
         if(w>0):
           w-=1
